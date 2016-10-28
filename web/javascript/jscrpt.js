@@ -52,13 +52,14 @@ function f1() {
     precio = prompt("dime el precio");
     descripcion = prompt("dime la descripción");
 
-    articulo = new Articulo(id, nombre, precio, descripcion);
-
-    alert(articulo.id);
-    
+    articulo = new Articulo(id, nombre, precio, descripcion);   
     miCarrito.anyadeCarrito(articulo);
 }
 
 function f2 (){
     miCarrito.mostrar();
+}
+
+function f3(){
+    document.write(JSON.stringify(miCarrito));
 }
